@@ -20,7 +20,7 @@ def sort_players():
             avg_height_exp.append(player['height'])
         else:
             non_experienced_players.append(player['name'])
-            player['experience'] = True
+            player['experience'] = False
             player['height'] = int(player["height"][:2])
             avg_height_inexp.append(player['height'])
     PANTHERS = experienced_players[:3] + non_experienced_players[:3]
